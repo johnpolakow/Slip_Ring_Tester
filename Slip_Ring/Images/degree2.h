@@ -1,0 +1,42 @@
+
+/*******************************************************************************
+* image 7   9
+* filename: unsaved
+* name: image_Font
+*
+* preset name: Color R5G6B5
+* data block size: 16 bit(s), uint16_t
+* RLE compression enabled: no
+* conversion type: Color, not_used not_used
+* bits per pixel: 16
+*
+* preprocess:
+*  main scan direction: top_to_bottom
+*  line scan direction: forward
+*  inverse: no
+*******************************************************************************/
+
+/*
+ typedef struct {
+     const uint16_t *data;
+     uint16_t width;
+     uint16_t height;
+     uint8_t dataSize;
+     } tImage;
+*/
+#include <stdint.h>
+
+
+
+static const uint16_t degree2[63] = {
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0x0000, 0x3186, 0xffff, 0xef7d, 0xffff, 0x2965, 0x0000, 
+    0x0861, 0xef5d, 0x8410, 0x3186, 0x8430, 0xef5d, 0x0861, 
+    0x39c7, 0xe71c, 0x0000, 0x0000, 0x0000, 0xe71c, 0x39c7, 
+    0x10a2, 0xf7be, 0x4a69, 0x0000, 0x4a69, 0xf79e, 0x10a2, 
+    0x0000, 0x5acb, 0xef7d, 0xffff, 0xef5d, 0x528a, 0x0000, 
+    0x0000, 0x0000, 0x0000, 0x18c3, 0x0000, 0x0000, 0x0000, 
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000
+};
+
